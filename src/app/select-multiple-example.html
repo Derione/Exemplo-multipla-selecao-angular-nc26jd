@@ -1,0 +1,14 @@
+<mat-form-field appearance="fill">
+  <mat-label>Indicadores</mat-label>
+  <mat-select [formControl]="indicadores" multiple>
+    <mat-option
+      *ngFor="let indicadores of indicadoresList"
+      [value]="indicadores"
+      >{{indicadores}}</mat-option
+    >
+  </mat-select>
+</mat-form-field>
+
+<!-- Copyright 2022 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->
